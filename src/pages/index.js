@@ -439,13 +439,13 @@ export default (() => {
 			/>
 			<Text
 				text-align="center"
-				font="normal 400 20px/1.5 --fontFamily-googlePoppins"
+				font="--lead"
 				opacity="0.6"
 				letter-spacing="1px"
 				margin="16px 0px 16px 0px"
 				lg-margin="0px 0px 6px 0px"
 				quarkly-title="Title"
-				color="#8a49ff"
+				color="#5c00ff"
 				lg-text-align="center"
 				border-color="rgba(0, 0, 0, 0)"
 			>
@@ -507,67 +507,52 @@ export default (() => {
 					align-items="flex-start"
 				>
 					<Text
-						font="--base"
+						font="1em --fontFamily-googlePoppins"
 						letter-spacing="1px"
 						quarkly-title="Title"
 						margin="0px 0px 10px 0px"
-						color="--dark"
 						opacity="0.6"
 						lg-text-align="center"
 						lg-margin="0px 0px 6px 0px"
-						text-transform="uppercase"
+						border-color="rgba(0, 0, 0, 0)"
+						color="#5600f9"
 					>
-						Team
+						Offline Counselling{" "}
 					</Text>
 					<Text
 						md-font="--headline3"
-						font="--headline2"
+						font="normal normal 600 40px/60px --fontFamily-googlePoppins"
 						margin="0px 0px 28px 0px"
 						color="--dark"
 						lg-text-align="center"
 						lg-margin="0px 0px 18px 0px"
 						sm-font="--headline3"
 					>
-						Who We Are
+						Counselling directly with a psychologist in our office
 					</Text>
 					<Text
 						lg-margin="0px 0px 18px 0px"
 						sm-font="--base"
-						font="--lead"
+						font="1em --fontFamily-googlePoppins"
 						margin="0px 0px 20px 0px"
 						color="--darkL2"
 						opacity="0.6"
 						lg-text-align="left"
 					>
-						It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something bigger. Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference.
+						The purpose of counseling services is to solve the problems experienced by clients. Efforts to alleviate this client problem can be in the form of reducing the intensity of the problem
 					</Text>
-					<Link
-						href="/about"
-						color="--light"
-						padding="8px 18px 8px 18px"
-						text-align="center"
-						transition="transform --transitionDuration-fast --transitionTimingFunction-easeInOut 0s"
-						text-decoration-line="initial"
-						font="--base"
-						letter-spacing="0.5px"
-						margin="9px 0px 0px 0px"
-						background="--color-primary"
-						hover-transform="translateY(-4px)"
+					<Button
+						font="normal 00 16px/1.5 --fontFamily-googlePoppins"
+						color="#ffffff"
+						background="#8A49FF"
+						border-radius="41px"
+						align-self="flex-start"
+						margin="16px 0px 16px 0px"
 					>
-						Read More
-					</Link>
+						Learn More
+					</Button>
 				</Box>
-				<Box
-					padding="0px 0px 60% 0px"
-					height="0px"
-					hover-background="--color-lightD2 url(https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-illustration-sea-first.svg?v=2020-11-06T16:37:39.391Z) center center/110% no-repeat"
-					transition="background --transitionDuration-normal --transitionTimingFunction-easeInOut 0s"
-					md-order="-1"
-					width="100%"
-					background="--color-lightD2 url(https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-illustration-sea-first.svg?v=2020-11-06T16:37:39.391Z) center center/100% no-repeat"
-					margin="0px 0px 0px 0px"
-					lg-order="-1"
-				/>
+				<Image src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/Image5.svg?v=2023-05-02T08:58:21.313Z" display="block" />
 			</Box>
 			<Box
 				md-margin="44px 0px 0px 0px"
@@ -580,73 +565,63 @@ export default (() => {
 				md-grid-template-columns="1fr"
 				lg-margin="64px 0px 0px 0px"
 			>
+				<Image src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/Image6.svg?v=2023-05-02T09:07:27.149Z" display="block" />
 				<Box
-					margin="0px 0px 0px 0px"
-					padding="0px 0px 60% 0px"
-					height="0px"
-					hover-background="--color-lightD2 url(https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-illustration-sea-second.svg?v=2020-11-06T17:14:59.136Z) center center/110% no-repeat"
-					transition="background --transitionDuration-normal --transitionTimingFunction-easeInOut 0s"
-					width="100%"
-					background="--color-lightD2 url(https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-illustration-sea-second.svg?v=2020-11-06T17:14:59.136Z) center center/100% no-repeat"
-				/>
-				<Box
+					min-width="100px"
+					min-height="100px"
 					display="flex"
 					flex-direction="column"
 					align-items="flex-start"
-					min-width="100px"
-					min-height="100px"
 				>
 					<Text
-						lg-text-align="center"
-						quarkly-title="Title"
-						text-transform="uppercase"
-						opacity="0.6"
-						lg-margin="0px 0px 6px 0px"
-						font="--base"
-						margin="0px 0px 10px 0px"
+						font="1em --fontFamily-googlePoppins"
 						letter-spacing="1px"
-						color="--dark"
+						quarkly-title="Title"
+						margin="0px 0px 10px 0px"
+						opacity="0.6"
+						lg-text-align="center"
+						lg-margin="0px 0px 6px 0px"
+						border-color="rgba(0, 0, 0, 0)"
+						color="#5600f9"
 					>
-						expertise
+						Offline Counselling{" "}
 					</Text>
 					<Text
-						font="--headline2"
+						md-font="--headline3"
+						font="normal normal 600 40px/60px --fontFamily-googlePoppins"
 						margin="0px 0px 28px 0px"
 						color="--dark"
 						lg-text-align="center"
 						lg-margin="0px 0px 18px 0px"
 						sm-font="--headline3"
-						md-font="--headline3"
 					>
-						Why Choose Us
+						Counseling with a
+						<br />
+						psychologist anytime
+						<br />
+						and anywhere
 					</Text>
 					<Text
-						opacity="0.6"
-						sm-text-align="left"
-						lg-text-align="left"
 						lg-margin="0px 0px 18px 0px"
 						sm-font="--base"
-						font="--lead"
+						font="1em --fontFamily-googlePoppins"
 						margin="0px 0px 20px 0px"
 						color="--darkL2"
+						opacity="0.6"
+						lg-text-align="left"
 					>
-						It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something bigger. Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference.
+						The purpose of counseling services is to solve the problems experienced by clients. Efforts to alleviate this client problem can be in the form of reducing the intensity of the problem
 					</Text>
-					<Link
-						color="--light"
-						text-align="center"
-						background="--color-primary"
-						transition="transform --transitionDuration-fast --transitionTimingFunction-easeInOut 0s"
-						hover-transform="translateY(-4px)"
-						href="/team"
-						text-decoration-line="initial"
-						padding="8px 18px 8px 18px"
-						font="--base"
-						letter-spacing="0.5px"
-						margin="9px 0px 0px 0px"
+					<Button
+						font="normal 00 16px/1.5 --fontFamily-googlePoppins"
+						color="#ffffff"
+						background="#8A49FF"
+						border-radius="41px"
+						align-self="flex-start"
+						margin="16px 0px 16px 0px"
 					>
-						Read More
-					</Link>
+						Learn More
+					</Button>
 				</Box>
 			</Box>
 		</Section>
