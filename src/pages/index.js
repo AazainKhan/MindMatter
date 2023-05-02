@@ -584,7 +584,7 @@ export default (() => {
 						border-color="rgba(0, 0, 0, 0)"
 						color="#5600f9"
 					>
-						Offline Counselling{" "}
+						Online Counselling{" "}
 					</Text>
 					<Text
 						md-font="--headline3"
@@ -641,88 +641,107 @@ export default (() => {
 				align-items="center"
 			/>
 			<Text
-				color="--dark"
-				text-align="center"
-				text-transform="uppercase"
-				lg-text-align="center"
+				font="1em --fontFamily-googlePoppins"
 				letter-spacing="1px"
+				quarkly-title="Title"
 				margin="0px 0px 10px 0px"
 				opacity="0.6"
+				lg-text-align="center"
 				lg-margin="0px 0px 6px 0px"
-				quarkly-title="Title"
-				font="--base"
+				border-color="rgba(0, 0, 0, 0)"
+				color="#5600f9"
 			>
-				what we create
+				Psychologist
 			</Text>
 			<Text
-				text-align="center"
-				lg-text-align="center"
-				md-margin="0px 0px 36px 0px"
-				sm-font="--headline3"
 				md-font="--headline3"
-				font="--headline2"
-				margin="0px 0px 48px 0px"
+				font="normal normal 600 40px/60px --fontFamily-googlePoppins"
+				margin="0px 0px 28px 0px"
 				color="--dark"
+				lg-text-align="center"
+				lg-margin="0px 0px 18px 0px"
+				sm-font="--headline3"
 			>
-				Our Works
+				Meet our team!
+			</Text>
+			<Text
+				lg-margin="0px 0px 18px 0px"
+				sm-font="--base"
+				font="1em --fontFamily-googlePoppins"
+				margin="0px 0px 20px 0px"
+				color="--darkL2"
+				opacity="0.6"
+				lg-text-align="left"
+			>
+				The purpose of counseling services is to solve the problems experienced by clients. Efforts to alleviate this client problem can be in the form of reducing the intensity of the problem
 			</Text>
 			<Box
 				lg-grid-template-columns="repeat(2, 1fr)"
 				md-grid-template-columns="1fr"
-				width="100%"
-				display="flex"
 				grid-gap="32px"
 				grid-template-columns="repeat(3, 1fr)"
+				align-self="stretch"
+				align-items="flex-start"
+				justify-content="center"
+				display="flex"
+				flex-direction="row"
 				order="0"
+				height="280px"
 			>
 				<Box
-					width="100%"
-					background="--color-lightD2 url(https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-illustration-sea-first.svg?v=2020-11-06T16:37:39.391Z) center center/100% no-repeat"
 					padding="0px 0px 60% 0px"
-					height="0px"
 					hover-background="--color-lightD2 url(https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-illustration-sea-first.svg?v=2020-11-06T16:37:39.391Z) center center/110% no-repeat"
 					transition="background --transitionDuration-normal --transitionTimingFunction-easeInOut 0s"
-				/>
+					display="flex"
+					flex="0 0 auto"
+					flex-direction="row"
+					max-width="none"
+					min-height="none"
+					height="100% border-box2"
+					max-height="100%"
+				>
+					<Image src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/1.svg?v=2023-05-02T09:20:03.752Z" display="grid" align-items="stretch" justify-content="center" />
+				</Box>
 				<Box
-					width="100%"
-					background="--color-lightD2 url(https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-illustration-sea-second.svg?v=2020-11-06T17:14:59.136Z) center center/100% no-repeat"
 					padding="0px 0px 60% 0px"
-					height="0px"
 					hover-background="--color-lightD2 url(https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-illustration-sea-second.svg?v=2020-11-06T17:14:59.136Z) center center/110% no-repeat"
 					transition="background --transitionDuration-normal --transitionTimingFunction-easeInOut 0s"
-				/>
+					display="flex"
+					align-self="auto"
+					flex="0 0 auto"
+				>
+					<Image src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/1.svg?v=2023-05-02T09:20:03.752Z" display="flex" align-items="stretch" justify-content="center" />
+				</Box>
 				<Box
-					width="100%"
-					background="--color-lightD2 url(https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-illustration-sea-third.svg?v=2020-11-06T17:15:50.700Z) center center/100% no-repeat"
 					padding="0px 0px 60% 0px"
-					height="0px"
-					hover-background="--color-lightD2 url(https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-illustration-sea-third.svg?v=2020-11-06T17:15:50.700Z) center center/110% no-repeat"
+					hover-background="--color-lightD2 url(https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-illustration-sea-second.svg?v=2020-11-06T17:14:59.136Z) center center/110% no-repeat"
 					transition="background --transitionDuration-normal --transitionTimingFunction-easeInOut 0s"
-				/>
+					display="flex"
+					align-self="auto"
+					flex="0 0 auto"
+				>
+					<Image src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/1.svg?v=2023-05-02T09:20:03.752Z" display="flex" align-items="stretch" justify-content="center" />
+				</Box>
 				<Box
-					height="0px"
-					hover-background="--color-lightD2 url(https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-illustration-sea-fourth.svg?v=2020-11-06T17:17:18.847Z) center center/110% no-repeat"
-					transition="background --transitionDuration-normal --transitionTimingFunction-easeInOut 0s"
-					width="100%"
-					background="--color-lightD2 url(https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-illustration-sea-fourth.svg?v=2020-11-06T17:17:18.847Z) center center/100% no-repeat"
 					padding="0px 0px 60% 0px"
-				/>
+					hover-background="--color-lightD2 url(https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-illustration-sea-second.svg?v=2020-11-06T17:14:59.136Z) center center/110% no-repeat"
+					transition="background --transitionDuration-normal --transitionTimingFunction-easeInOut 0s"
+					display="flex"
+					align-self="auto"
+					flex="0 0 auto"
+				>
+					<Image src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/1.svg?v=2023-05-02T09:20:03.752Z" display="flex" align-items="stretch" justify-content="center" />
+				</Box>
 				<Box
-					width="100%"
-					background="--color-lightD2 url(https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-illustration-sea-fifth.svg?v=2020-11-06T17:18:24.897Z) center center/100% no-repeat"
 					padding="0px 0px 60% 0px"
-					height="0px"
-					hover-background="--color-lightD2 url(https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-illustration-sea-fifth.svg?v=2020-11-06T17:18:24.897Z) center center/110% no-repeat"
+					hover-background="--color-lightD2 url(https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-illustration-sea-second.svg?v=2020-11-06T17:14:59.136Z) center center/110% no-repeat"
 					transition="background --transitionDuration-normal --transitionTimingFunction-easeInOut 0s"
-				/>
-				<Box
-					transition="background --transitionDuration-normal --transitionTimingFunction-easeInOut 0s"
-					width="100%"
-					background="--color-lightD2 url(https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-illustration-sea-sixth.svg?v=2020-11-06T17:19:03.657Z) center center/100% no-repeat"
-					padding="0px 0px 60% 0px"
-					height="0px"
-					hover-background="--color-lightD2 url(https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-illustration-sea-sixth.svg?v=2020-11-06T17:19:03.657Z) center center/110% no-repeat"
-				/>
+					display="flex"
+					align-self="auto"
+					flex="0 0 auto"
+				>
+					<Image src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/1.svg?v=2023-05-02T09:20:03.752Z" display="flex" align-items="stretch" justify-content="center" />
+				</Box>
 			</Box>
 		</Section>
 		<Section
