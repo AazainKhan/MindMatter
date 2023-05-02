@@ -178,7 +178,7 @@ export default (() => {
 							Are there problems? Let's talk with us, our psychologists are experienced in dealing with problems
 						</Text>
 						<Button
-							font="normal 500 16px/21px --fontFamily-googlePoppins"
+							font="normal 00 16px/1.5 --fontFamily-googlePoppins"
 							color="#ffffff"
 							background="#8A49FF"
 							border-radius="41px"
@@ -227,10 +227,12 @@ export default (() => {
 							margin="5px 5px 5px 5px"
 							xl-display="flex"
 							xl-min-height="20%"
-							xl-background="rgba(255, 0, 0, 0)"
 							xl-height="80px9"
+							xl-background="rgba(255, 0, 0, 0)"
 							md-display="none"
 							hover-box-shadow="--l"
+							transition="all 0.4s ease-in-out 0.1s"
+							hover-transition="all 0.4s ease-in-out 0.1s"
 						>
 							<Box
 								min-width="100px"
@@ -275,10 +277,12 @@ export default (() => {
 							margin="5px 5px 5px 5px"
 							xl-display="flex"
 							xl-min-height="20%"
-							xl-background="rgba(255, 0, 0, 0)"
 							xl-height="80px9"
+							xl-background="rgba(255, 0, 0, 0)"
 							md-display="none"
 							hover-box-shadow="--l"
+							transition="all 0.4s ease-in-out 0.1s"
+							hover-transition="all 0.4s ease-in-out 0.1s"
 						>
 							<Box
 								min-width="100px"
@@ -288,7 +292,7 @@ export default (() => {
 								align-items="center"
 								justify-content="center"
 							>
-								<Image src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/Icon2.svg?v=2023-05-02T08:00:17.413Z" display="block" />
+								<Image src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/Icon2.svg?v=2023-05-02T08:02:34.742Z" display="block" />
 							</Box>
 							<Box
 								min-width="100px"
@@ -305,7 +309,7 @@ export default (() => {
 									align-items="center"
 									justify-content="center"
 								>
-									Strategic place
+									Strategic Facilities
 								</Text>
 							</Box>
 						</Box>
@@ -323,10 +327,12 @@ export default (() => {
 							margin="5px 5px 5px 5px"
 							xl-display="flex"
 							xl-min-height="20%"
-							xl-background="rgba(255, 0, 0, 0)"
 							xl-height="80px9"
+							xl-background="rgba(255, 0, 0, 0)"
 							md-display="none"
 							hover-box-shadow="--l"
+							transition="all 0.4s ease-in-out 0.1s"
+							hover-transition="all 0.4s ease-in-out 0.1s"
 						>
 							<Box
 								min-width="100px"
@@ -370,10 +376,12 @@ export default (() => {
 							margin="5px 5px 5px 5px"
 							xl-display="flex"
 							xl-min-height="20%"
-							xl-background="rgba(255, 0, 0, 0)"
 							xl-height="80px9"
+							xl-background="rgba(255, 0, 0, 0)"
 							md-display="none"
 							hover-box-shadow="--l"
+							transition="all 0.4s ease-in-out 0.1s"
+							hover-transition="all 0.4s ease-in-out 0.1s"
 						>
 							<Box
 								min-width="100px"
@@ -400,7 +408,7 @@ export default (() => {
 									align-items="center"
 									justify-content="center"
 								>
-									Online and Offline Consult
+									Online and Offline Counsult
 								</Text>
 							</Box>
 						</Box>
@@ -431,30 +439,43 @@ export default (() => {
 			/>
 			<Text
 				text-align="center"
-				font="--base"
+				font="normal 400 20px/1.5 --fontFamily-googlePoppins"
 				opacity="0.6"
 				letter-spacing="1px"
-				margin="0px 0px 10px 0px"
+				margin="16px 0px 16px 0px"
 				lg-margin="0px 0px 6px 0px"
 				quarkly-title="Title"
-				text-transform="uppercase"
-				color="--dark"
+				color="#8a49ff"
 				lg-text-align="center"
+				border-color="rgba(0, 0, 0, 0)"
 			>
-				Our Mission
+				Problem solving
 			</Text>
 			<Text
 				letter-spacing="1px"
-				color="--dark"
+				color="#051B29"
 				text-align="center"
 				width="85%"
 				lg-font="--lead"
 				sm-font="--base"
-				font="normal 500 28px/1.2 'AvenirNextCyrRegular', sans-serif"
-				margin="0px 0px 0px 0px"
+				font="normal 600 40px/60px --fontFamily-googlePoppins"
+				margin="16px 0px 16px 0px"
 			>
-				We empower creators to do their best work while maintaining our uncompromising values while we grow.
+				Have your tough conversations with us
 			</Text>
+			<Text
+				letter-spacing="1px"
+				color="#6F7275"
+				text-align="center"
+				width="85%"
+				lg-font="--lead"
+				sm-font="--base"
+				font="normal 400 16px/28px --fontFamily-googlePoppins"
+				margin="16px 0px 16px 0px"
+			>
+				Our doctors and specialists are experienced in understanding and supporting through tough situations
+			</Text>
+			<Image src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/List.svg?v=2023-05-02T08:27:21.325Z" position="relative" width="150%" margin="16px 0px 16px 0px" />
 		</Section>
 		<Section
 			md-padding="25px 0px 25px 0px"
