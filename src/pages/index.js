@@ -41,16 +41,17 @@ export default (() => {
 			<Box
 				min-width="fit-content"
 				xl-align-self="center"
-				xl-justify-self="stretch"
+				xl-justify-self="center"
 				xl-order="0"
 				xl-display="flex"
 				xl-align-items="center"
 				xl-justify-content="center"
 				xl-align-content="space-around"
 				align-self="center"
-				justify-self="center"
+				justify-self="end"
 				order="1"
 				display="flex"
+				md-display="none"
 			>
 				<Link
 					href="#"
@@ -151,31 +152,260 @@ export default (() => {
 				height="620px"
 				justify-content="center"
 				sm-width="100%"
-				min-width="auto"
+				min-width="100%"
 				margin="0px 32px 0px 32px"
 				align-items="center"
 				lg-height="520px"
 				md-height="420px"
 				md-padding="0px 24px 0px 24px"
 				xl-background="rgba(25, 28, 35, 0)"
-				xl-display="inline-block"
 				xl-align-self="center"
 				xl-order="0"
 			/>
-			<Structure>
-				<Override slot="Content">
+			<Structure width="100%" md-flex="1 1 0%" md-align-self="auto">
+				<Override
+					slot="Content"
+					md-justify-items="start"
+					md-align-items="end"
+					md-display="flex"
+					sm-display="flex"
+				>
 					<Override slot="cell-0">
-						<Text margin="0px 0px 0px 0px">
-							Some text
+						<Text margin="16px 0px 16px 0px" font="600 58px/84px sans-serif" width="416px" text-align="left">
+							Let's Find A Solution To Your Problem
 						</Text>
-						<Text margin="0px 0px 0px 0px">
-							Some text
+						<Text margin="16px 0px 16px 0px" text-align="left" color="#6F7275" font="400 18px/32px --fontFamily-googlePoppins">
+							Are there problems? Let's talk with us, our psychologists are experienced in dealing with problems
 						</Text>
+						<Button
+							font="normal 500 16px/21px --fontFamily-googlePoppins"
+							color="#ffffff"
+							background="#8A49FF"
+							border-radius="41px"
+							align-self="flex-start"
+							margin="16px 0px 16px 0px"
+						>
+							Start Consultation
+						</Button>
 					</Override>
 					<Override slot="cell-1">
-						<Image src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=200" display="block" />
+						<Image
+							src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/hero.svg?v=2023-05-02T04:39:03.428Z"
+							display="flex"
+							max-width="80%"
+							align-items="center"
+							justify-content="center"
+							xl-position="relative"
+							xl-z-index="-1"
+							xl-max-width="100%"
+						/>
 					</Override>
-					<Override slot="Cell 0th" align-self="center" justify-self="center" />
+					<Override
+						slot="Cell 0th"
+						align-self="center"
+						justify-self="start"
+						display="flex"
+						min-width="100%"
+						align-items="center"
+						flex-direction="column"
+						xl-width="auto"
+						md-display="block"
+						md-min-width="inherit"
+					/>
+					<Override slot="cell-2">
+						<Box
+							min-width="100%"
+							min-height="100px"
+							display="flex"
+							background="rgba(255, 0, 0, 0)"
+							border-radius="104px"
+							width="fit-content"
+							lg-background="rgba(255, 0, 0, 0)"
+							lg-hover-box-shadow="--l"
+							xl-flex="0 0 auto"
+							xl-margin="5px 5px 5px 5px"
+							margin="5px 5px 5px 5px"
+							xl-display="flex"
+							xl-min-height="20%"
+							xl-background="rgba(255, 0, 0, 0)"
+							xl-height="80px9"
+							md-display="none"
+							hover-box-shadow="--l"
+						>
+							<Box
+								min-width="100px"
+								min-height="100px"
+								display="flex"
+								align-self="center"
+								align-items="center"
+								justify-content="center"
+							>
+								<Image src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/Icon.svg?v=2023-05-02T06:01:42.282Z" display="block" />
+							</Box>
+							<Box
+								min-width="100px"
+								min-height="100px"
+								align-self="auto"
+								display="flex"
+								align-items="center"
+							>
+								<Text
+									margin="0px 0px 0px 0px"
+									color="#6F7275"
+									font="20px --fontFamily-googlePoppins"
+									display="flex"
+									align-items="center"
+									justify-content="center"
+								>
+									Professional Psychologist
+								</Text>
+							</Box>
+						</Box>
+						<Box
+							min-width="100%"
+							min-height="100px"
+							display="flex"
+							background="rgba(255, 0, 0, 0)"
+							border-radius="104px"
+							width="fit-content"
+							lg-background="rgba(255, 0, 0, 0)"
+							lg-hover-box-shadow="--l"
+							xl-padding="5p 0px 0px 0px"
+							xl-margin="5px 5px 5px 5px"
+							margin="5px 5px 5px 5px"
+							xl-display="flex"
+							xl-min-height="20%"
+							xl-background="rgba(255, 0, 0, 0)"
+							xl-height="80px9"
+							md-display="none"
+							hover-box-shadow="--l"
+						>
+							<Box
+								min-width="100px"
+								min-height="100px"
+								display="flex"
+								align-self="center"
+								align-items="center"
+								justify-content="center"
+							>
+								<Image src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/Icon2.svg?v=2023-05-02T08:00:17.413Z" display="block" />
+							</Box>
+							<Box
+								min-width="100px"
+								min-height="100px"
+								align-self="auto"
+								display="flex"
+								align-items="center"
+							>
+								<Text
+									margin="0px 0px 0px 0px"
+									color="#6F7275"
+									font="20px --fontFamily-googlePoppins"
+									display="flex"
+									align-items="center"
+									justify-content="center"
+								>
+									Strategic place
+								</Text>
+							</Box>
+						</Box>
+						<Box
+							min-width="100%"
+							min-height="100px"
+							display="flex"
+							background="rgba(255, 0, 0, 0)"
+							border-radius="104px"
+							width="fit-content"
+							lg-background="rgba(255, 0, 0, 0)"
+							lg-hover-box-shadow="--l"
+							xl-padding="5p 0px 0px 0px"
+							xl-margin="5px 5px 5px 5px"
+							margin="5px 5px 5px 5px"
+							xl-display="flex"
+							xl-min-height="20%"
+							xl-background="rgba(255, 0, 0, 0)"
+							xl-height="80px9"
+							md-display="none"
+							hover-box-shadow="--l"
+						>
+							<Box
+								min-width="100px"
+								min-height="100px"
+								display="flex"
+								align-self="center"
+								align-items="center"
+								justify-content="center"
+							>
+								<Image src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/3.svg?v=2023-05-02T08:02:18.934Z" display="block" />
+							</Box>
+							<Box
+								min-width="100px"
+								min-height="100px"
+								align-self="auto"
+								display="flex"
+								align-items="center"
+							>
+								<Text
+									margin="0px 0px 0px 0px"
+									color="#6F7275"
+									font="20px --fontFamily-googlePoppins"
+									display="flex"
+									align-items="center"
+									justify-content="center"
+								>
+									Gaming Therapy
+								</Text>
+							</Box>
+						</Box>
+						<Box
+							min-width="100%"
+							min-height="100px"
+							display="flex"
+							background="rgba(255, 0, 0, 0)"
+							border-radius="104px"
+							width="fit-content"
+							lg-background="rgba(255, 0, 0, 0)"
+							lg-hover-box-shadow="--l"
+							xl-margin="5px 5px 5px 5px"
+							margin="5px 5px 5px 5px"
+							xl-display="flex"
+							xl-min-height="20%"
+							xl-background="rgba(255, 0, 0, 0)"
+							xl-height="80px9"
+							md-display="none"
+							hover-box-shadow="--l"
+						>
+							<Box
+								min-width="100px"
+								min-height="100px"
+								display="flex"
+								align-self="center"
+								align-items="center"
+								justify-content="center"
+							>
+								<Image src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/4.svg?v=2023-05-02T08:02:51.031Z" display="block" />
+							</Box>
+							<Box
+								min-width="100px"
+								min-height="100px"
+								align-self="auto"
+								display="flex"
+								align-items="center"
+							>
+								<Text
+									margin="0px 0px 0px 0px"
+									color="#6F7275"
+									font="20px --fontFamily-googlePoppins"
+									display="flex"
+									align-items="center"
+									justify-content="center"
+								>
+									Online and Offline Consult
+								</Text>
+							</Box>
+						</Box>
+					</Override>
+					<Override slot="Cell 1" display="flex" align-items="center" justify-content="center" />
 				</Override>
 			</Structure>
 		</Section>
