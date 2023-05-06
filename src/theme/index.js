@@ -42,7 +42,8 @@ export default {
 		"orange": "#FF7C22",
 		"red": "#DE350B",
 		"purple": "#FD6DF9",
-		"indigo": "#9B6CFC"
+		"indigo": "#9B6CFC",
+		"palette": "#8A49FF"
 	},
 	"fontFamily": {
 		"sans": "-apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
@@ -187,5 +188,5 @@ export default {
 			}
 		}
 	},
-	"version": 21
+	"version": 28
 }

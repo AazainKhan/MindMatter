@@ -6,7 +6,7 @@ import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { Override } from "@quarkly/components";
 export default (() => {
 	return <Theme theme={theme}>
-		<GlobalQuarklyPageStyles pageUrl={"index"} />
+		<GlobalQuarklyPageStyles pageUrl={"index1"} />
 		<Helmet>
 			<title>
 				Home | Website Example
@@ -35,7 +35,7 @@ export default (() => {
 				border-color="rgba(0, 0, 238, 0)"
 				max-width="fit-content"
 			>
-				<Image src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/Logo_1.png?v=2023-05-02T21:34:02.277Z" width="120px" z-index="3" />
+				<Image src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/1.png?v=2023-05-01T21:18:21.068Z" width="120px" z-index="3" />
 			</Link>
 			<Box
 				min-width="fit-content"
@@ -735,7 +735,7 @@ export default (() => {
 					hover-transition="transform 0s ease 0s"
 					hover-transform="translateY(0px)"
 				>
-					<Image src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/mem_5.svg?v=2023-05-02T21:34:02.251Z" display="flex" align-items="stretch" justify-content="center" />
+					<Image src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/5.svg?v=2023-05-02T09:33:30.460Z" display="flex" align-items="stretch" justify-content="center" />
 				</Box>
 			</Box>
 		</Section>

@@ -1,9 +1,9 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Image, Button, Section, Text, Box } from "@quarkly/widgets";
+import { Theme, Link, Image, Button, Section, Text } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
-import { Override, StackItem, Stack, SocialMedia } from "@quarkly/components";
+import { Override, StackItem, Stack } from "@quarkly/components";
 import * as Components from "components";
 import { MdMenu } from "react-icons/md";
 export default (() => {
@@ -170,49 +170,6 @@ export default (() => {
 				</StackItem>
 				{"    "}
 			</Stack>
-		</Section>
-		<Section
-			margin="0 0 0 0"
-			padding="16px 0 16px 0"
-			box-sizing="border-box"
-			quarkly-title="Footer"
-			justify-content="center"
-		>
-			<Override
-				slot="SectionContent"
-				width="100%"
-				margin="0px 32px 0px 32px"
-				md-margin="0px 16px 0px 16px"
-				min-width="auto"
-			/>
-			<Box
-				display="grid"
-				grid-gap="32px"
-				width="100%"
-				grid-template-columns="repeat(2, 1fr)"
-				sm-grid-gap="16px"
-			>
-				<Box display="flex" align-items="center" sm-flex-wrap="wrap">
-					<Image src="https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-quarkly-logo-grey.svg?v=2020-11-06T17:24:35.270Z" width="28px" height="28px" />
-					<Link
-						text-decoration-line="initial"
-						opacity="0.6"
-						font="--base"
-						color="--dark"
-						text-align="left"
-						margin="1px 0px 0px 10px"
-						hover-text-decoration-line="underline"
-						white-space="nowrap"
-						href="https://quarkly.io/"
-					>
-						Made on Quarkly
-					</Link>
-				</Box>
-				<SocialMedia twitter="https://twitter.com/quarklyapp" youtube="https://www.youtube.com/channel/UCK5bXs2L0bbSMQ82BQ3hIkw" justify-content="flex-end" facebook="https://www.facebook.com/quarklyapp/">
-					<Override slot="icon" color="--dark" />
-					<Override slot="link" border-radius="50%" background="none" />
-				</SocialMedia>
-			</Box>
 		</Section>
 		<Link
 			font={"--capture"}
