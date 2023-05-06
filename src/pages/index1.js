@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Image, Box, Button, Section, Strong, Text, Structure } from "@quarkly/widgets";
+import { Theme, Link, Image, Box, Button, Section, Span, Text, Structure, Strong } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { Override } from "@quarkly/components";
@@ -53,7 +53,7 @@ export default (() => {
 				md-display="none"
 			>
 				<Link
-					href="/index"
+					href="/index#home"
 					color="#051B29"
 					xl-padding="0px 16px 0px 16px"
 					xl-text-decoration-line="initial"
@@ -68,7 +68,7 @@ export default (() => {
 					Home
 				</Link>
 				<Link
-					href="/index11"
+					href="/index11#service"
 					color="#051B29"
 					xl-padding="0px 16px 0px 16px"
 					xl-text-decoration-line="initial"
@@ -98,7 +98,7 @@ export default (() => {
 					Consultation
 				</Link>
 				<Link
-					href="/index1"
+					href="/index1#about"
 					color="#051B29"
 					xl-padding="0px 16px 0px 16px"
 					xl-text-decoration-line="initial"
@@ -197,9 +197,18 @@ export default (() => {
 								border-color="rgba(0, 0, 0, 0)"
 								color="#5600f9"
 							>
-								<Strong>
+								<Span
+									overflow-wrap="normal"
+									word-break="normal"
+									white-space="normal"
+									text-indent="0"
+									text-overflow="clip"
+									hyphens="manual"
+									user-select="auto"
+									pointer-events="auto"
+								>
 									Success Story
-								</Strong>
+								</Span>
 							</Text>
 							<Text
 								md-font="--headline3"
@@ -222,7 +231,7 @@ export default (() => {
 								color="--darkL2"
 								opacity="0.6"
 								lg-text-align="left"
-								text-align="center"
+								text-align="left"
 								xl-text-align="left"
 							>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id elementum venenatis pharetra faucibus cum praesent faucibus. Blandit nibh tincidunt ipsum dui id penatibus eleifend pulvinar. Vestibulum vehicula egestas.
@@ -269,7 +278,7 @@ export default (() => {
 					<Override slot="Cell 2" display="block" />
 					<Override slot="cell-0">
 						<Box min-width="100px" min-height="100px">
-							<Image src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/hero_1.png?v=2023-05-06T17:43:06.841Z" display="block" />
+							<Image src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/hero_2.png?v=2023-05-06T18:46:03.041Z" display="block" />
 						</Box>
 					</Override>
 					<Override slot="cell-1">
@@ -285,9 +294,18 @@ export default (() => {
 								border-color="rgba(0, 0, 0, 0)"
 								color="#5600f9"
 							>
-								<Strong>
-									Success Story
-								</Strong>
+								<Span
+									overflow-wrap="normal"
+									word-break="normal"
+									white-space="normal"
+									text-indent="0"
+									text-overflow="clip"
+									hyphens="manual"
+									user-select="auto"
+									pointer-events="auto"
+								>
+									About us
+								</Span>
 							</Text>
 							<Text
 								md-font="--headline3"
@@ -300,7 +318,7 @@ export default (() => {
 								xl-text-align="left"
 								xl-font="normal normal 600 40px/60px --fontFamily-googlePoppins"
 							>
-								Schedule A Meeting For Your Mental Consultation
+								Welcome to the world of MindMatters{" "}
 							</Text>
 							<Text
 								lg-margin="0px 0px 18px 0px"
@@ -310,7 +328,7 @@ export default (() => {
 								color="--darkL2"
 								opacity="0.6"
 								lg-text-align="left"
-								text-align="center"
+								text-align="left"
 								xl-text-align="left"
 							>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id elementum venenatis pharetra faucibus cum praesent faucibus. Blandit nibh tincidunt ipsum dui id penatibus eleifend pulvinar. Vestibulum vehicula egestas.
@@ -489,80 +507,6 @@ export default (() => {
 					<Image src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/mem_5.svg?v=2023-05-02T21:34:02.251Z" display="flex" align-items="stretch" justify-content="center" />
 				</Box>
 			</Box>
-		</Section>
-		<Section
-			sm-padding="24px 0 24px 0"
-			box-sizing="border-box"
-			justify-content="center"
-			padding="90px 0px 100px 0px"
-			border-color="rgba(0, 0, 0, 0)"
-			lg-padding="50px 30px 50px 30px"
-			display="flex"
-			quarkly-title="Banner"
-		>
-			<Override
-				slot="SectionContent"
-				min-width="auto"
-				margin="0px 48px 0px 48px"
-				md-margin="0px 16px 0px 16px"
-				align-items="center"
-				display="grid"
-				align-self="flex-start"
-				flex="0 1 auto"
-				justify-content="center"
-				flex-direction="row"
-			/>
-			<Image
-				src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/Vector%207.svg?v=2023-05-06T17:34:17.820Z"
-				display="block"
-				position="fixed"
-				left="auto"
-				right="-7px"
-				width="515.3653928571429px"
-				bottom="8px"
-				height="911.9776785714286px"
-				top="auto"
-				z-index="-1"
-			/>
-			<Box min-width="100px" min-height="100px" align-self="center" justify-self="center">
-				<Image src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/Logo_3.png?v=2023-05-06T17:25:55.377Z" display="block" />
-			</Box>
-			<Box min-width="100px" min-height="100px">
-				<Text
-					md-font="--headline3"
-					font="normal normal 600 40px/60px --fontFamily-googlePoppins"
-					margin="0px 0px 28px 0px"
-					color="--dark"
-					lg-text-align="center"
-					lg-margin="0px 0px 18px 0px"
-					sm-font="--headline3"
-					text-align="left"
-					align-self="flex-start"
-					display="flex"
-				>
-					Let's Find A Solution To Your Problem
-				</Text>
-			</Box>
-			<Box min-width="100px" min-height="100px" text-align="center">
-				<Button
-					font="normal 00 16px/1.5 --fontFamily-googlePoppins"
-					color="#ffffff"
-					background="#8A49FF"
-					border-radius="41px"
-					align-self="flex-start"
-					margin="16px 0px 16px 0px"
-				>
-					Learn More
-				</Button>
-			</Box>
-			<Image
-				src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/Vector%209.svg?v=2023-05-06T17:28:22.912Z"
-				display="block"
-				position="absolute"
-				left="-1px"
-				bottom="335px"
-				xl-position="fixed"
-			/>
 		</Section>
 		<Section
 			padding="80px 0 80px 0"

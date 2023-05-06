@@ -432,28 +432,6 @@ export default (() => {
 			</Structure>
 		</Section>
 		<Section
-			box-sizing="border-box"
-			lg-padding="50px 30px 50px 30px"
-			id="mission"
-			padding="90px 0px 100px 0px"
-			quarkly-title="About"
-			border-color="--color-lightD2"
-			border-style="solid"
-			border-width="1px 0px 1px 0px"
-			sm-padding="24px 0 24px 0"
-			justify-content="center"
-		>
-			<Override
-				slot="SectionContent"
-				md-margin="0px 16px 0px 16px"
-				align-items="center"
-				width="100%"
-				min-width="auto"
-				margin="0px 32px 0px 32px"
-				color="#6328ad"
-			/>
-		</Section>
-		<Section
 			md-padding="25px 0px 25px 0px"
 			justify-content="center"
 			padding="70px 0 70px 0"
@@ -892,87 +870,6 @@ export default (() => {
 				</Text>
 			</Box>
 		</Section>
-		<Section
-			sm-padding="24px 0 24px 0"
-			box-sizing="border-box"
-			justify-content="center"
-			padding="90px 0px 100px 0px"
-			border-color="rgba(0, 0, 0, 0)"
-			lg-padding="50px 30px 50px 30px"
-			display="flex"
-			quarkly-title="Banner"
-		>
-			<Override
-				slot="SectionContent"
-				min-width="auto"
-				margin="0px 48px 0px 48px"
-				md-margin="0px 16px 0px 16px"
-				align-items="center"
-				display="grid"
-				align-self="flex-start"
-				flex="0 1 auto"
-				justify-content="center"
-				flex-direction="row"
-			/>
-			<Image
-				src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/Vector%207.svg?v=2023-05-06T17:34:17.820Z"
-				display="block"
-				position="absolute"
-				left="auto"
-				right="-7px"
-				width="515.3653928571429px"
-				bottom="8px"
-				height="911.9776785714286px"
-				top="auto"
-				z-index="-1"
-			/>
-			<Box min-width="100px" min-height="100px" align-self="center" justify-self="center">
-				<Image src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/Logo_3.png?v=2023-05-06T17:25:55.377Z" display="block" />
-			</Box>
-			<Box min-width="100px" min-height="100px">
-				<Text
-					md-font="--headline3"
-					font="normal normal 600 40px/60px --fontFamily-googlePoppins"
-					margin="0px 0px 28px 0px"
-					color="--dark"
-					lg-text-align="center"
-					lg-margin="0px 0px 18px 0px"
-					sm-font="--headline3"
-					text-align="left"
-					align-self="flex-start"
-					display="flex"
-				>
-					Let's Find A Solution To Your Problem
-				</Text>
-			</Box>
-			<Box min-width="100px" min-height="100px" text-align="center">
-				<Button
-					font="normal 00 16px/1.5 --fontFamily-googlePoppins"
-					color="#ffffff"
-					background="#8A49FF"
-					border-radius="41px"
-					align-self="flex-start"
-					margin="16px 0px 16px 0px"
-				>
-					Learn More
-				</Button>
-			</Box>
-			<Image
-				src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/Vector%209.svg?v=2023-05-06T17:28:22.912Z"
-				display="block"
-				position="absolute"
-				left="-1px"
-				bottom="335px"
-			/>
-		</Section>
-		<Link
-			transition="opacity 200ms ease"
-			quarkly-title="Link"
-			href="/index"
-			position="relative"
-			border-color="rgba(0, 0, 238, 0)"
-			max-width="fit-content"
-		/>
 		<Section
 			padding="80px 0 80px 0"
 			quarkly-title="Footer"

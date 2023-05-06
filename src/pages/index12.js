@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Image, Box, Button, Section, Text, Structure, Strong, Input } from "@quarkly/widgets";
+import { Theme, Link, Image, Box, Button, Section, Text, Span, Structure, Strong } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { Override } from "@quarkly/components";
@@ -162,8 +162,35 @@ export default (() => {
 		>
 			Get Information From Our Blog
 		</Text>
-		<Text margin="0px 0px 0px 0px" min-width="10px" min-height="10px">
-			Some text
+		<Text
+			margin="0px 0px 0px 0px"
+			min-width="10px"
+			min-height="10px"
+			height="40px"
+			width="180px"
+			display="inline-block"
+			bottom="auto"
+			left="auto"
+			right="194px"
+			top="254px"
+			position="static"
+			text-transform="uppercase"
+			text-align="right"
+		>
+			<Span
+				display="grid"
+				justify-items="center"
+				overflow-wrap="normal"
+				word-break="normal"
+				white-space="normal"
+				text-indent="0"
+				text-overflow="clip"
+				hyphens="manual"
+				user-select="auto"
+				pointer-events="auto"
+			>
+				January 22, 2022
+			</Span>
 		</Text>
 		<Section
 			lg-padding="25px 0 25px 0"
@@ -537,7 +564,7 @@ export default (() => {
 					hover-transition="transform 0s ease 0s"
 					hover-transform="translateY(0px)"
 				>
-					<Image src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/5.svg?v=2023-05-02T09:33:30.460Z" display="flex" align-items="stretch" justify-content="center" />
+					<Image src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/mem_5.svg?v=2023-05-02T21:34:02.251Z" display="flex" align-items="stretch" justify-content="center" />
 				</Box>
 			</Box>
 		</Section>
@@ -651,29 +678,6 @@ export default (() => {
 			</Box>
 		</Section>
 		<Section
-			sm-padding="24px 0 24px 0"
-			box-sizing="border-box"
-			justify-content="center"
-			padding="90px 0px 100px 0px"
-			border-color="rgba(0, 0, 0, 0)"
-			lg-padding="50px 30px 50px 30px"
-			quarkly-title="Testimonials"
-			display="flex"
-		>
-			<Override
-				slot="SectionContent"
-				min-width="auto"
-				margin="0px 48px 0px 48px"
-				md-margin="0px 16px 0px 16px"
-				align-items="center"
-				display="flex"
-				align-self="flex-start"
-				flex="0 1 auto"
-				justify-content="center"
-				flex-direction="row"
-			/>
-		</Section>
-		<Section
 			padding="80px 0 80px 0"
 			quarkly-title="Footer"
 			lg-padding="50px 0 50px 0"
@@ -776,7 +780,6 @@ export default (() => {
 			</Box>
 			<Box min-width="100px" min-height="100px" padding="0px 16px 0px 16px" />
 		</Section>
-		<Input display="block" placeholder-color="LightGray" background="white" />
 		<Link
 			font={"--capture"}
 			font-size={"10px"}
