@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Image, Box, Button, Section, Text, Strong } from "@quarkly/widgets";
+import { Theme, Link, Image, Box, Button, Section, Strong, Text, Structure } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { Override } from "@quarkly/components";
@@ -175,218 +175,203 @@ export default (() => {
 				xl-background="rgba(25, 28, 35, 0)"
 				xl-display="grid"
 			/>
-			<Box min-width="100px" min-height="100px" xl-order="-1">
-				<Image src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/hero_1.png?v=2023-05-06T17:43:06.841Z" display="block" />
-			</Box>
-			<Box min-width="100px" min-height="100px" xl-order="1" />
+			<Structure cells-number-total="2">
+				<Override slot="Content">
+					<Override slot="Cell 0th" display="block" position="static" />
+					<Override slot="Cell 2" display="block" />
+					<Override slot="cell-0">
+						<Box min-width="100px" min-height="100px">
+							<Image src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/hero_1.png?v=2023-05-06T17:43:06.841Z" display="block" />
+						</Box>
+					</Override>
+					<Override slot="cell-1">
+						<Box min-width="100px" min-height="100px" xl-text-align="left">
+							<Text
+								font="1em --fontFamily-googlePoppins"
+								letter-spacing="1px"
+								quarkly-title="Title"
+								margin="0px 0px 10px 0px"
+								opacity="0.6"
+								lg-text-align="center"
+								lg-margin="0px 0px 6px 0px"
+								border-color="rgba(0, 0, 0, 0)"
+								color="#5600f9"
+							>
+								<Strong>
+									Success Story
+								</Strong>
+							</Text>
+							<Text
+								md-font="--headline3"
+								font="normal normal 600 40px/60px --fontFamily-googlePoppins"
+								margin="0px 0px 28px 0px"
+								color="--dark"
+								lg-text-align="center"
+								lg-margin="0px 0px 18px 0px"
+								sm-font="--headline3"
+								xl-text-align="left"
+								xl-font="normal normal 600 40px/60px --fontFamily-googlePoppins"
+							>
+								Schedule A Meeting For Your Mental Consultation
+							</Text>
+							<Text
+								lg-margin="0px 0px 18px 0px"
+								sm-font="--base"
+								font="1em --fontFamily-googlePoppins"
+								margin="0px 0px 20px 0px"
+								color="--darkL2"
+								opacity="0.6"
+								lg-text-align="left"
+								text-align="center"
+								xl-text-align="left"
+							>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id elementum venenatis pharetra faucibus cum praesent faucibus. Blandit nibh tincidunt ipsum dui id penatibus eleifend pulvinar. Vestibulum vehicula egestas.
+								<br />
+								<br />
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id elementum venenatis pharetra faucibus cum praesent faucibus. Blandit nibh tincidunt ipsum dui id penatibus eleifend pulvinar. Vestibulum vehicula egestas.
+								<br />
+								<br />
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id elementum venenatis pharetra faucibus cum praesent faucibus. Blandit nibh tincidunt ipsum dui id penatibus eleifend pulvinar. Vestibulum vehicula egestas
+							</Text>
+						</Box>
+					</Override>
+				</Override>
+			</Structure>
 		</Section>
 		<Section
-			box-sizing="border-box"
-			lg-padding="50px 30px 50px 30px"
-			id="mission"
-			padding="90px 0px 100px 0px"
-			quarkly-title="About"
-			border-color="--color-lightD2"
-			border-style="solid"
-			border-width="1px 0px 1px 0px"
-			sm-padding="24px 0 24px 0"
+			lg-padding="25px 0 25px 0"
+			sm-padding="0px 0 25px 0"
 			justify-content="center"
+			padding="25px 0 75px 0"
+			sm-align-items="center"
+			sm-justify-content="center"
+			quarkly-title="Hero"
 		>
 			<Override
 				slot="SectionContent"
 				md-margin="0px 16px 0px 16px"
+				width="100%"
+				height="620px"
+				justify-content="center"
+				sm-width="100%"
+				min-width="100%"
+				margin="0px 32px 0px 32px"
 				align-items="center"
-				width="100%"
-				min-width="auto"
-				margin="0px 32px 0px 32px"
+				lg-height="520px"
+				md-height="420px"
+				md-padding="0px 24px 0px 24px"
+				xl-background="rgba(25, 28, 35, 0)"
+				xl-display="grid"
 			/>
-			<Text
-				text-align="center"
-				font="--lead"
-				opacity="0.6"
-				letter-spacing="1px"
-				margin="16px 0px 16px 0px"
-				lg-margin="0px 0px 6px 0px"
-				quarkly-title="Title"
-				color="#5c00ff"
-				lg-text-align="center"
-				border-color="rgba(0, 0, 0, 0)"
-			>
-				Problem solving
-			</Text>
-			<Text
-				letter-spacing="1px"
-				color="#051B29"
-				text-align="center"
-				width="85%"
-				lg-font="--lead"
-				sm-font="--base"
-				font="normal 600 40px/60px --fontFamily-googlePoppins"
-				margin="16px 0px 16px 0px"
-			>
-				Have your tough conversations with us
-			</Text>
-			<Text
-				letter-spacing="1px"
-				color="#6F7275"
-				text-align="center"
-				width="85%"
-				lg-font="--lead"
-				sm-font="--base"
-				font="normal 400 16px/28px --fontFamily-googlePoppins"
-				margin="16px 0px 16px 0px"
-			>
-				Our doctors and specialists are experienced in understanding and supporting through tough situations
-			</Text>
-			<Image src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/List.svg?v=2023-05-02T21:34:02.275Z" position="relative" width="150%" margin="16px 0px 16px 0px" />
+			<Structure cells-number-total="2">
+				<Override slot="Content">
+					<Override slot="Cell 0th" display="block" position="static" />
+					<Override slot="Cell 2" display="block" />
+					<Override slot="cell-0">
+						<Box min-width="100px" min-height="100px">
+							<Image src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/hero_1.png?v=2023-05-06T17:43:06.841Z" display="block" />
+						</Box>
+					</Override>
+					<Override slot="cell-1">
+						<Box min-width="100px" min-height="100px" xl-text-align="left">
+							<Text
+								font="1em --fontFamily-googlePoppins"
+								letter-spacing="1px"
+								quarkly-title="Title"
+								margin="0px 0px 10px 0px"
+								opacity="0.6"
+								lg-text-align="center"
+								lg-margin="0px 0px 6px 0px"
+								border-color="rgba(0, 0, 0, 0)"
+								color="#5600f9"
+							>
+								<Strong>
+									Success Story
+								</Strong>
+							</Text>
+							<Text
+								md-font="--headline3"
+								font="normal normal 600 40px/60px --fontFamily-googlePoppins"
+								margin="0px 0px 28px 0px"
+								color="--dark"
+								lg-text-align="center"
+								lg-margin="0px 0px 18px 0px"
+								sm-font="--headline3"
+								xl-text-align="left"
+								xl-font="normal normal 600 40px/60px --fontFamily-googlePoppins"
+							>
+								Schedule A Meeting For Your Mental Consultation
+							</Text>
+							<Text
+								lg-margin="0px 0px 18px 0px"
+								sm-font="--base"
+								font="1em --fontFamily-googlePoppins"
+								margin="0px 0px 20px 0px"
+								color="--darkL2"
+								opacity="0.6"
+								lg-text-align="left"
+								text-align="center"
+								xl-text-align="left"
+							>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id elementum venenatis pharetra faucibus cum praesent faucibus. Blandit nibh tincidunt ipsum dui id penatibus eleifend pulvinar. Vestibulum vehicula egestas.
+								<br />
+								<br />
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id elementum venenatis pharetra faucibus cum praesent faucibus. Blandit nibh tincidunt ipsum dui id penatibus eleifend pulvinar. Vestibulum vehicula egestas.
+								<br />
+								<br />
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id elementum venenatis pharetra faucibus cum praesent faucibus. Blandit nibh tincidunt ipsum dui id penatibus eleifend pulvinar. Vestibulum vehicula egestas
+							</Text>
+						</Box>
+					</Override>
+				</Override>
+			</Structure>
 		</Section>
-		<Section
-			md-padding="25px 0px 25px 0px"
-			justify-content="center"
-			padding="70px 0 70px 0"
-			quarkly-title="Info"
-			lg-padding="50px 0px 50px 0px"
-		>
+		<Section quarkly-title="Success">
 			<Override
 				slot="SectionContent"
-				width="100%"
-				min-width="auto"
-				margin="0px 32px 0px 32px"
-				md-margin="0px 16px 0px 16px"
+				align-self="auto"
+				display="flex"
+				flex-direction="column"
+				align-items="center"
 			/>
-			<Box
-				lg-grid-template-columns="1fr"
-				display="grid"
-				grid-template-columns="2fr 3fr"
-				grid-gap="64px"
-				xl-grid-gap="32px"
-				md-grid-template-columns="1fr"
+			<Text
+				font="1em --fontFamily-googlePoppins"
+				letter-spacing="1px"
+				quarkly-title="Title"
+				margin="0px 0px 10px 0px"
+				opacity="0.6"
+				lg-text-align="center"
+				lg-margin="0px 0px 6px 0px"
+				border-color="rgba(0, 0, 0, 0)"
+				color="#5600f9"
 			>
-				<Box
-					min-width="100px"
-					min-height="100px"
-					display="flex"
-					flex-direction="column"
-					align-items="flex-start"
-				>
-					<Text
-						font="1em --fontFamily-googlePoppins"
-						letter-spacing="1px"
-						quarkly-title="Title"
-						margin="0px 0px 10px 0px"
-						opacity="0.6"
-						lg-text-align="center"
-						lg-margin="0px 0px 6px 0px"
-						border-color="rgba(0, 0, 0, 0)"
-						color="#5600f9"
-					>
-						Offline Counselling{" "}
-					</Text>
-					<Text
-						md-font="--headline3"
-						font="normal normal 600 40px/60px --fontFamily-googlePoppins"
-						margin="0px 0px 28px 0px"
-						color="--dark"
-						lg-text-align="center"
-						lg-margin="0px 0px 18px 0px"
-						sm-font="--headline3"
-					>
-						Counselling directly with a psychologist in our office
-					</Text>
-					<Text
-						lg-margin="0px 0px 18px 0px"
-						sm-font="--base"
-						font="1em --fontFamily-googlePoppins"
-						margin="0px 0px 20px 0px"
-						color="--darkL2"
-						opacity="0.6"
-						lg-text-align="left"
-					>
-						The purpose of counseling services is to solve the problems experienced by clients. Efforts to alleviate this client problem can be in the form of reducing the intensity of the problem
-					</Text>
-					<Button
-						font="normal 00 16px/1.5 --fontFamily-googlePoppins"
-						color="#ffffff"
-						background="#8A49FF"
-						border-radius="41px"
-						align-self="flex-start"
-						margin="16px 0px 16px 0px"
-					>
-						Learn More
-					</Button>
-				</Box>
-				<Image src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/img_4.svg?v=2023-05-02T21:34:02.266Z" display="block" />
-			</Box>
-			<Box
-				md-margin="44px 0px 0px 0px"
-				lg-grid-template-columns="1fr"
-				display="grid"
-				grid-template-columns="3fr 2fr"
-				grid-gap="64px"
-				margin="96px 0px 0px 0px"
-				xl-grid-gap="32px"
-				md-grid-template-columns="1fr"
-				lg-margin="64px 0px 0px 0px"
+				<Strong>
+					Success Story
+				</Strong>
+			</Text>
+			<Text
+				md-font="--headline3"
+				font="normal normal 600 40px/60px --fontFamily-googlePoppins"
+				margin="0px 0px 28px 0px"
+				color="--dark"
+				lg-text-align="center"
+				lg-margin="0px 0px 18px 0px"
+				sm-font="--headline3"
 			>
-				<Image src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/img_1.svg?v=2023-05-02T21:34:02.269Z" display="block" />
-				<Box
-					min-width="100px"
-					min-height="100px"
-					display="flex"
-					flex-direction="column"
-					align-items="flex-start"
-				>
-					<Text
-						font="1em --fontFamily-googlePoppins"
-						letter-spacing="1px"
-						quarkly-title="Title"
-						margin="0px 0px 10px 0px"
-						opacity="0.6"
-						lg-text-align="center"
-						lg-margin="0px 0px 6px 0px"
-						border-color="rgba(0, 0, 0, 0)"
-						color="#5600f9"
-					>
-						Online Counselling{" "}
-					</Text>
-					<Text
-						md-font="--headline3"
-						font="normal normal 600 40px/60px --fontFamily-googlePoppins"
-						margin="0px 0px 28px 0px"
-						color="--dark"
-						lg-text-align="center"
-						lg-margin="0px 0px 18px 0px"
-						sm-font="--headline3"
-					>
-						Counseling with a
-						<br />
-						psychologist anytime
-						<br />
-						and anywhere
-					</Text>
-					<Text
-						lg-margin="0px 0px 18px 0px"
-						sm-font="--base"
-						font="1em --fontFamily-googlePoppins"
-						margin="0px 0px 20px 0px"
-						color="--darkL2"
-						opacity="0.6"
-						lg-text-align="left"
-					>
-						The purpose of counseling services is to solve the problems experienced by clients. Efforts to alleviate this client problem can be in the form of reducing the intensity of the problem
-					</Text>
-					<Button
-						font="normal 00 16px/1.5 --fontFamily-googlePoppins"
-						color="#ffffff"
-						background="#8A49FF"
-						border-radius="41px"
-						align-self="flex-start"
-						margin="16px 0px 16px 0px"
-					>
-						Learn More
-					</Button>
-				</Box>
-			</Box>
+				2022 Become the best consultant psychology
+			</Text>
+			<Text
+				lg-margin="0px 0px 18px 0px"
+				sm-font="--base"
+				font="1em --fontFamily-googlePoppins"
+				margin="0px 0px 20px 0px"
+				color="--darkL2"
+				opacity="0.6"
+				lg-text-align="left"
+				text-align="center"
+			>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id elementum venenatis pharetra faucibus cum praesent faucibus. Blandit nibh tincidunt ipsum dui id penatibus eleifend pulvinar. Vestibulum vehicula egestas
+			</Text>
 		</Section>
 		<Section
 			padding="100px 0px 100px 0px"
@@ -414,7 +399,9 @@ export default (() => {
 				border-color="rgba(0, 0, 0, 0)"
 				color="#5600f9"
 			>
-				Psychologist
+				<Strong>
+					Psychologist
+				</Strong>
 			</Text>
 			<Text
 				md-font="--headline3"
@@ -510,115 +497,6 @@ export default (() => {
 			padding="90px 0px 100px 0px"
 			border-color="rgba(0, 0, 0, 0)"
 			lg-padding="50px 30px 50px 30px"
-			quarkly-title="Testimonials"
-			display="flex"
-		>
-			<Override
-				slot="SectionContent"
-				min-width="auto"
-				margin="0px 48px 0px 48px"
-				md-margin="0px 16px 0px 16px"
-				align-items="center"
-				display="flex"
-				align-self="flex-start"
-				flex="0 1 auto"
-				justify-content="center"
-				flex-direction="row"
-			/>
-			<Box
-				min-width="100px"
-				min-height="100px"
-				display="block"
-				order="-1"
-				flex="1 1 0%"
-			>
-				<Text
-					font="500 20px/30px --fontFamily-googlePoppins"
-					letter-spacing="0.0037em"
-					quarkly-title="Title"
-					margin="0px 0px 10px 0px"
-					opacity="0.6"
-					lg-text-align="center"
-					lg-margin="0px 0px 6px 0px"
-					border-color="rgba(0, 0, 0, 0)"
-					color="#5600f9"
-					text-align="left"
-					align-self="flex-start"
-					display="flex"
-				>
-					Testimonials{" "}
-				</Text>
-				<Text
-					md-font="--headline3"
-					font="normal normal 600 40px/60px --fontFamily-googlePoppins"
-					margin="0px 0px 28px 0px"
-					color="--dark"
-					lg-text-align="center"
-					lg-margin="0px 0px 18px 0px"
-					sm-font="--headline3"
-					text-align="left"
-					align-self="flex-start"
-					display="flex"
-				>
-					Speakers stories
-				</Text>
-				<Text
-					lg-margin="0px 0px 18px 0px"
-					sm-font="--base"
-					font="1em --fontFamily-googlePoppins"
-					color="--darkL2"
-					opacity="0.6"
-					lg-text-align="left"
-					text-align="left"
-					align-self="flex-start"
-					display="flex"
-					padding="0px 10px 0px 10px"
-				>
-					It's not easy to tell a very personal problem, but these strong people managed to overcome their fears
-				</Text>
-			</Box>
-			<Box
-				min-width="100px"
-				min-height="100px"
-				display="block"
-				align-self="baseline"
-				order="1"
-				background="#EEE4FF"
-				padding="10px 10px 10px 10px"
-				border-radius="100px"
-				margin="0px 10px 0px 10px"
-			>
-				<Image src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/img_3.svg?v=2023-05-02T21:34:02.254Z" display="block" padding="5px 5px 5px 5px" />
-			</Box>
-			<Box
-				min-width="100px"
-				min-height="100px"
-				display="flex"
-				align-items="center"
-				flex="1 1 0%"
-				background="#EEE4FF"
-				border-radius="142px"
-			>
-				<Image
-					src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/img_2.svg?v=2023-05-02T21:34:02.254Z"
-					display="block"
-					flex="0 0 auto"
-					max-width="40%"
-					max-height="40%"
-					padding="20px 20px 20px 20px"
-				/>
-				<Text margin="0px 0px 0px 0px" font="16px --fontFamily-googlePoppins">
-					" I had someone I could talk to, It helped open my mind to such welcoming and understanding people. " -Marie
-				</Text>
-			</Box>
-		</Section>
-		<Section
-			sm-padding="24px 0 24px 0"
-			box-sizing="border-box"
-			justify-content="center"
-			padding="90px 0px 100px 0px"
-			border-color="rgba(0, 0, 0, 0)"
-			lg-padding="50px 30px 50px 30px"
 			display="flex"
 			quarkly-title="Banner"
 		>
@@ -637,7 +515,7 @@ export default (() => {
 			<Image
 				src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/Vector%207.svg?v=2023-05-06T17:34:17.820Z"
 				display="block"
-				position="absolute"
+				position="fixed"
 				left="auto"
 				right="-7px"
 				width="515.3653928571429px"
@@ -683,6 +561,7 @@ export default (() => {
 				position="absolute"
 				left="-1px"
 				bottom="335px"
+				xl-position="fixed"
 			/>
 		</Section>
 		<Section

@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Image, Box, Button, Section, Text, Structure, Strong } from "@quarkly/widgets";
+import { Theme, Link, Image, Box, Button, Section, Text, Structure, Strong, Input } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { Override } from "@quarkly/components";
@@ -150,6 +150,21 @@ export default (() => {
 				</Button>
 			</Box>
 		</Section>
+		<Text
+			letter-spacing="1px"
+			color="#051B29"
+			text-align="center"
+			width="85%"
+			lg-font="--lead"
+			sm-font="--base"
+			font="normal 600 40px/60px --fontFamily-googlePoppins"
+			margin="16px 0px 16px 0px"
+		>
+			Get Information From Our Blog
+		</Text>
+		<Text margin="0px 0px 0px 0px" min-width="10px" min-height="10px">
+			Some text
+		</Text>
 		<Section
 			lg-padding="25px 0 25px 0"
 			sm-padding="0px 0 25px 0"
@@ -184,36 +199,8 @@ export default (() => {
 					md-display="flex"
 					sm-display="flex"
 				>
-					<Override slot="cell-0">
-						<Text margin="16px 0px 16px 0px" font="600 58px/84px sans-serif" width="416px" text-align="left">
-							Let's Find A Solution To Your Problem
-						</Text>
-						<Text margin="16px 0px 16px 0px" text-align="left" color="#6F7275" font="400 18px/32px --fontFamily-googlePoppins">
-							Are there problems? Let's talk with us, our psychologists are experienced in dealing with problems
-						</Text>
-						<Button
-							font="normal 00 16px/1.5 --fontFamily-googlePoppins"
-							color="#ffffff"
-							background="#8A49FF"
-							border-radius="41px"
-							align-self="flex-start"
-							margin="16px 0px 16px 0px"
-						>
-							Start Consultation
-						</Button>
-					</Override>
-					<Override slot="cell-1">
-						<Image
-							src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/hero.svg?v=2023-05-02T21:34:02.266Z"
-							display="flex"
-							max-width="80%"
-							align-items="center"
-							justify-content="center"
-							xl-position="relative"
-							xl-z-index="-1"
-							xl-max-width="100%"
-						/>
-					</Override>
+					<Override slot="cell-0" />
+					<Override slot="cell-1" />
 					<Override
 						slot="Cell 0th"
 						align-self="center"
@@ -226,207 +213,7 @@ export default (() => {
 						md-display="block"
 						md-min-width="inherit"
 					/>
-					<Override slot="cell-2">
-						<Box
-							min-width="100%"
-							min-height="100px"
-							display="flex"
-							background="rgba(255, 0, 0, 0)"
-							border-radius="104px"
-							width="fit-content"
-							lg-background="rgba(255, 0, 0, 0)"
-							lg-hover-box-shadow="--l"
-							xl-flex="0 0 auto"
-							xl-margin="5px 5px 5px 5px"
-							margin="5px 5px 5px 5px"
-							xl-display="flex"
-							xl-min-height="20%"
-							xl-height="80px9"
-							xl-background="rgba(255, 0, 0, 0)"
-							md-display="none"
-							hover-box-shadow="--l"
-							transition="all 0.4s ease-in-out 0.1s"
-							hover-transition="all 0.4s ease-in-out 0.1s"
-						>
-							<Box
-								min-width="100px"
-								min-height="100px"
-								display="flex"
-								align-self="center"
-								align-items="center"
-								justify-content="center"
-							>
-								<Image src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/icon_3.svg?v=2023-05-02T21:34:02.274Z" display="block" />
-							</Box>
-							<Box
-								min-width="100px"
-								min-height="100px"
-								align-self="auto"
-								display="flex"
-								align-items="center"
-							>
-								<Text
-									margin="0px 0px 0px 0px"
-									color="#6F7275"
-									font="20px --fontFamily-googlePoppins"
-									display="flex"
-									align-items="center"
-									justify-content="center"
-								>
-									Professional Psychologist
-								</Text>
-							</Box>
-						</Box>
-						<Box
-							min-width="100%"
-							min-height="100px"
-							display="flex"
-							background="rgba(255, 0, 0, 0)"
-							border-radius="104px"
-							width="fit-content"
-							lg-background="rgba(255, 0, 0, 0)"
-							lg-hover-box-shadow="--l"
-							xl-padding="5p 0px 0px 0px"
-							xl-margin="5px 5px 5px 5px"
-							margin="5px 5px 5px 5px"
-							xl-display="flex"
-							xl-min-height="20%"
-							xl-height="80px9"
-							xl-background="rgba(255, 0, 0, 0)"
-							md-display="none"
-							hover-box-shadow="--l"
-							transition="all 0.4s ease-in-out 0.1s"
-							hover-transition="all 0.4s ease-in-out 0.1s"
-						>
-							<Box
-								min-width="100px"
-								min-height="100px"
-								display="flex"
-								align-self="center"
-								align-items="center"
-								justify-content="center"
-							>
-								<Image src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/icon_2.svg?v=2023-05-02T21:34:02.255Z" display="block" />
-							</Box>
-							<Box
-								min-width="100px"
-								min-height="100px"
-								align-self="auto"
-								display="flex"
-								align-items="center"
-							>
-								<Text
-									margin="0px 0px 0px 0px"
-									color="#6F7275"
-									font="20px --fontFamily-googlePoppins"
-									display="flex"
-									align-items="center"
-									justify-content="center"
-								>
-									Strategic Facilities
-								</Text>
-							</Box>
-						</Box>
-						<Box
-							min-width="100%"
-							min-height="100px"
-							display="flex"
-							background="rgba(255, 0, 0, 0)"
-							border-radius="104px"
-							width="fit-content"
-							lg-background="rgba(255, 0, 0, 0)"
-							lg-hover-box-shadow="--l"
-							xl-padding="5p 0px 0px 0px"
-							xl-margin="5px 5px 5px 5px"
-							margin="5px 5px 5px 5px"
-							xl-display="flex"
-							xl-min-height="20%"
-							xl-height="80px9"
-							xl-background="rgba(255, 0, 0, 0)"
-							md-display="none"
-							hover-box-shadow="--l"
-							transition="all 0.4s ease-in-out 0.1s"
-							hover-transition="all 0.4s ease-in-out 0.1s"
-						>
-							<Box
-								min-width="100px"
-								min-height="100px"
-								display="flex"
-								align-self="center"
-								align-items="center"
-								justify-content="center"
-							>
-								<Image src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/icon_1.svg?v=2023-05-02T21:34:02.271Z" display="block" />
-							</Box>
-							<Box
-								min-width="100px"
-								min-height="100px"
-								align-self="auto"
-								display="flex"
-								align-items="center"
-							>
-								<Text
-									margin="0px 0px 0px 0px"
-									color="#6F7275"
-									font="20px --fontFamily-googlePoppins"
-									display="flex"
-									align-items="center"
-									justify-content="center"
-								>
-									Gaming Therapy
-								</Text>
-							</Box>
-						</Box>
-						<Box
-							min-width="100%"
-							min-height="100px"
-							display="flex"
-							background="rgba(255, 0, 0, 0)"
-							border-radius="104px"
-							width="fit-content"
-							lg-background="rgba(255, 0, 0, 0)"
-							lg-hover-box-shadow="--l"
-							xl-margin="5px 5px 5px 5px"
-							margin="5px 5px 5px 5px"
-							xl-display="flex"
-							xl-min-height="20%"
-							xl-height="80px9"
-							xl-background="rgba(255, 0, 0, 0)"
-							md-display="none"
-							hover-box-shadow="--l"
-							transition="all 0.4s ease-in-out 0.1s"
-							hover-transition="all 0.4s ease-in-out 0.1s"
-						>
-							<Box
-								min-width="100px"
-								min-height="100px"
-								display="flex"
-								align-self="center"
-								align-items="center"
-								justify-content="center"
-							>
-								<Image src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/icon_4.svg?v=2023-05-02T21:34:02.271Z" display="block" />
-							</Box>
-							<Box
-								min-width="100px"
-								min-height="100px"
-								align-self="auto"
-								display="flex"
-								align-items="center"
-							>
-								<Text
-									margin="0px 0px 0px 0px"
-									color="#6F7275"
-									font="20px --fontFamily-googlePoppins"
-									display="flex"
-									align-items="center"
-									justify-content="center"
-								>
-									Online and Offline Counsult
-								</Text>
-							</Box>
-						</Box>
-					</Override>
+					<Override slot="cell-2" />
 					<Override slot="Cell 1" display="flex" align-items="center" justify-content="center" />
 				</Override>
 			</Structure>
@@ -989,6 +776,7 @@ export default (() => {
 			</Box>
 			<Box min-width="100px" min-height="100px" padding="0px 16px 0px 16px" />
 		</Section>
+		<Input display="block" placeholder-color="LightGray" background="white" />
 		<Link
 			font={"--capture"}
 			font-size={"10px"}

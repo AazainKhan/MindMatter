@@ -466,6 +466,8 @@ export default (() => {
 				min-width="auto"
 				margin="0px 32px 0px 32px"
 				md-margin="0px 16px 0px 16px"
+				flex="1 1 0%"
+				align-self="flex-end"
 			/>
 			<Box
 				lg-grid-template-columns="1fr"
@@ -662,7 +664,7 @@ export default (() => {
 							Learn More
 						</Button>
 					</Box>
-					<Image src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/img_4.svg?v=2023-05-02T21:34:02.266Z" display="block" />
+					<Image src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/img_4.svg?v=2023-05-02T21:34:02.266Z" position="relative" />
 				</Box>
 			</Box>
 		</Section>

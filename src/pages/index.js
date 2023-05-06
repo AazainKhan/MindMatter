@@ -64,11 +64,11 @@ export default (() => {
 					font="400 14px/21px --fontFamily-googlePoppins"
 					padding="0px 14px 0px 14px"
 					min-width="fit-content"
+					target="_self"
 				>
 					Home
 				</Link>
 				<Link
-					href="#"
 					color="#051B29"
 					xl-padding="0px 16px 0px 16px"
 					xl-text-decoration-line="initial"
@@ -79,6 +79,8 @@ export default (() => {
 					font="400 14px/21px --fontFamily-googlePoppins"
 					padding="0px 14px 0px 14px"
 					min-width="fit-content"
+					target="_self"
+					href="/index11#Services"
 				>
 					Service
 				</Link>
@@ -888,7 +890,7 @@ export default (() => {
 			<Image
 				src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/Vector%207.svg?v=2023-05-06T17:34:17.820Z"
 				display="block"
-				position="absolute"
+				position="fixed"
 				left="auto"
 				right="-7px"
 				width="515.3653928571429px"
@@ -931,7 +933,7 @@ export default (() => {
 			<Image
 				src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/Vector%209.svg?v=2023-05-06T17:28:22.912Z"
 				display="block"
-				position="absolute"
+				position="fixed"
 				left="-1px"
 				bottom="335px"
 			/>
