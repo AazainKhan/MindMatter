@@ -1,12 +1,12 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Image, Box, Button, Section, Text, Strong } from "@quarkly/widgets";
+import { Theme, Link, Image, Box, Button, Section, Text, Structure, Strong } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { Override } from "@quarkly/components";
 export default (() => {
 	return <Theme theme={theme}>
-		<GlobalQuarklyPageStyles pageUrl={"index1"} />
+		<GlobalQuarklyPageStyles pageUrl={"index11"} />
 		<Helmet>
 			<title>
 				Home | Website Example
@@ -173,12 +173,263 @@ export default (() => {
 				md-height="420px"
 				md-padding="0px 24px 0px 24px"
 				xl-background="rgba(25, 28, 35, 0)"
-				xl-display="grid"
+				xl-align-self="center"
+				xl-order="0"
 			/>
-			<Box min-width="100px" min-height="100px" xl-order="-1">
-				<Image src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/hero_1.png?v=2023-05-06T17:43:06.841Z" display="block" />
-			</Box>
-			<Box min-width="100px" min-height="100px" xl-order="1" />
+			<Structure width="100%" md-flex="1 1 0%" md-align-self="auto">
+				<Override
+					slot="Content"
+					md-justify-items="start"
+					md-align-items="end"
+					md-display="flex"
+					sm-display="flex"
+				>
+					<Override slot="cell-0">
+						<Text margin="16px 0px 16px 0px" font="600 58px/84px sans-serif" width="416px" text-align="left">
+							Services{" "}
+							<br />
+							Details
+						</Text>
+						<Text margin="16px 0px 16px 0px" text-align="left" color="#6F7275" font="400 18px/32px --fontFamily-googlePoppins" />
+						<Button
+							font="normal 00 16px/1.5 --fontFamily-googlePoppins"
+							color="#ffffff"
+							background="#8A49FF"
+							border-radius="41px"
+							align-self="flex-start"
+							margin="16px 0px 16px 0px"
+						>
+							Start Consultation
+						</Button>
+					</Override>
+					<Override slot="cell-1">
+						<Image
+							src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/hero.svg?v=2023-05-02T21:34:02.266Z"
+							display="flex"
+							max-width="80%"
+							align-items="center"
+							justify-content="center"
+							xl-position="relative"
+							xl-z-index="-1"
+							xl-max-width="100%"
+						/>
+					</Override>
+					<Override
+						slot="Cell 0th"
+						align-self="center"
+						justify-self="start"
+						display="flex"
+						min-width="100%"
+						align-items="center"
+						flex-direction="column"
+						xl-width="auto"
+						md-display="block"
+						md-min-width="inherit"
+					/>
+					<Override slot="cell-2">
+						<Box
+							min-width="100%"
+							min-height="100px"
+							display="flex"
+							background="rgba(255, 0, 0, 0)"
+							border-radius="104px"
+							width="fit-content"
+							lg-background="rgba(255, 0, 0, 0)"
+							lg-hover-box-shadow="--l"
+							xl-flex="0 0 auto"
+							xl-margin="5px 5px 5px 5px"
+							margin="5px 5px 5px 5px"
+							xl-display="flex"
+							xl-min-height="20%"
+							xl-height="80px9"
+							xl-background="rgba(255, 0, 0, 0)"
+							md-display="none"
+							hover-box-shadow="--l"
+							transition="all 0.4s ease-in-out 0.1s"
+							hover-transition="all 0.4s ease-in-out 0.1s"
+						>
+							<Box
+								min-width="100px"
+								min-height="100px"
+								display="flex"
+								align-self="center"
+								align-items="center"
+								justify-content="center"
+							>
+								<Image src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/icon_3.svg?v=2023-05-02T21:34:02.274Z" display="block" />
+							</Box>
+							<Box
+								min-width="100px"
+								min-height="100px"
+								align-self="auto"
+								display="flex"
+								align-items="center"
+							>
+								<Text
+									margin="0px 0px 0px 0px"
+									color="#6F7275"
+									font="20px --fontFamily-googlePoppins"
+									display="flex"
+									align-items="center"
+									justify-content="center"
+								>
+									Professional Psychologist
+								</Text>
+							</Box>
+						</Box>
+						<Box
+							min-width="100%"
+							min-height="100px"
+							display="flex"
+							background="rgba(255, 0, 0, 0)"
+							border-radius="104px"
+							width="fit-content"
+							lg-background="rgba(255, 0, 0, 0)"
+							lg-hover-box-shadow="--l"
+							xl-padding="5p 0px 0px 0px"
+							xl-margin="5px 5px 5px 5px"
+							margin="5px 5px 5px 5px"
+							xl-display="flex"
+							xl-min-height="20%"
+							xl-height="80px9"
+							xl-background="rgba(255, 0, 0, 0)"
+							md-display="none"
+							hover-box-shadow="--l"
+							transition="all 0.4s ease-in-out 0.1s"
+							hover-transition="all 0.4s ease-in-out 0.1s"
+						>
+							<Box
+								min-width="100px"
+								min-height="100px"
+								display="flex"
+								align-self="center"
+								align-items="center"
+								justify-content="center"
+							>
+								<Image src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/icon_2.svg?v=2023-05-02T21:34:02.255Z" display="block" />
+							</Box>
+							<Box
+								min-width="100px"
+								min-height="100px"
+								align-self="auto"
+								display="flex"
+								align-items="center"
+							>
+								<Text
+									margin="0px 0px 0px 0px"
+									color="#6F7275"
+									font="20px --fontFamily-googlePoppins"
+									display="flex"
+									align-items="center"
+									justify-content="center"
+								>
+									Strategic Facilities
+								</Text>
+							</Box>
+						</Box>
+						<Box
+							min-width="100%"
+							min-height="100px"
+							display="flex"
+							background="rgba(255, 0, 0, 0)"
+							border-radius="104px"
+							width="fit-content"
+							lg-background="rgba(255, 0, 0, 0)"
+							lg-hover-box-shadow="--l"
+							xl-padding="5p 0px 0px 0px"
+							xl-margin="5px 5px 5px 5px"
+							margin="5px 5px 5px 5px"
+							xl-display="flex"
+							xl-min-height="20%"
+							xl-height="80px9"
+							xl-background="rgba(255, 0, 0, 0)"
+							md-display="none"
+							hover-box-shadow="--l"
+							transition="all 0.4s ease-in-out 0.1s"
+							hover-transition="all 0.4s ease-in-out 0.1s"
+						>
+							<Box
+								min-width="100px"
+								min-height="100px"
+								display="flex"
+								align-self="center"
+								align-items="center"
+								justify-content="center"
+							>
+								<Image src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/icon_1.svg?v=2023-05-02T21:34:02.271Z" display="block" />
+							</Box>
+							<Box
+								min-width="100px"
+								min-height="100px"
+								align-self="auto"
+								display="flex"
+								align-items="center"
+							>
+								<Text
+									margin="0px 0px 0px 0px"
+									color="#6F7275"
+									font="20px --fontFamily-googlePoppins"
+									display="flex"
+									align-items="center"
+									justify-content="center"
+								>
+									Gaming Therapy
+								</Text>
+							</Box>
+						</Box>
+						<Box
+							min-width="100%"
+							min-height="100px"
+							display="flex"
+							background="rgba(255, 0, 0, 0)"
+							border-radius="104px"
+							width="fit-content"
+							lg-background="rgba(255, 0, 0, 0)"
+							lg-hover-box-shadow="--l"
+							xl-margin="5px 5px 5px 5px"
+							margin="5px 5px 5px 5px"
+							xl-display="flex"
+							xl-min-height="20%"
+							xl-height="80px9"
+							xl-background="rgba(255, 0, 0, 0)"
+							md-display="none"
+							hover-box-shadow="--l"
+							transition="all 0.4s ease-in-out 0.1s"
+							hover-transition="all 0.4s ease-in-out 0.1s"
+						>
+							<Box
+								min-width="100px"
+								min-height="100px"
+								display="flex"
+								align-self="center"
+								align-items="center"
+								justify-content="center"
+							>
+								<Image src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/icon_4.svg?v=2023-05-02T21:34:02.271Z" display="block" />
+							</Box>
+							<Box
+								min-width="100px"
+								min-height="100px"
+								align-self="auto"
+								display="flex"
+								align-items="center"
+							>
+								<Text
+									margin="0px 0px 0px 0px"
+									color="#6F7275"
+									font="20px --fontFamily-googlePoppins"
+									display="flex"
+									align-items="center"
+									justify-content="center"
+								>
+									Online and Offline Counsult
+								</Text>
+							</Box>
+						</Box>
+					</Override>
+					<Override slot="Cell 1" display="flex" align-items="center" justify-content="center" />
+				</Override>
+			</Structure>
 		</Section>
 		<Section
 			box-sizing="border-box"
@@ -199,46 +450,8 @@ export default (() => {
 				width="100%"
 				min-width="auto"
 				margin="0px 32px 0px 32px"
+				color="#6328ad"
 			/>
-			<Text
-				text-align="center"
-				font="--lead"
-				opacity="0.6"
-				letter-spacing="1px"
-				margin="16px 0px 16px 0px"
-				lg-margin="0px 0px 6px 0px"
-				quarkly-title="Title"
-				color="#5c00ff"
-				lg-text-align="center"
-				border-color="rgba(0, 0, 0, 0)"
-			>
-				Problem solving
-			</Text>
-			<Text
-				letter-spacing="1px"
-				color="#051B29"
-				text-align="center"
-				width="85%"
-				lg-font="--lead"
-				sm-font="--base"
-				font="normal 600 40px/60px --fontFamily-googlePoppins"
-				margin="16px 0px 16px 0px"
-			>
-				Have your tough conversations with us
-			</Text>
-			<Text
-				letter-spacing="1px"
-				color="#6F7275"
-				text-align="center"
-				width="85%"
-				lg-font="--lead"
-				sm-font="--base"
-				font="normal 400 16px/28px --fontFamily-googlePoppins"
-				margin="16px 0px 16px 0px"
-			>
-				Our doctors and specialists are experienced in understanding and supporting through tough situations
-			</Text>
-			<Image src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/List.svg?v=2023-05-02T21:34:02.275Z" position="relative" width="150%" margin="16px 0px 16px 0px" />
 		</Section>
 		<Section
 			md-padding="25px 0px 25px 0px"
@@ -386,6 +599,122 @@ export default (() => {
 						Learn More
 					</Button>
 				</Box>
+				<Box
+					lg-grid-template-columns="1fr"
+					display="grid"
+					grid-template-columns="2fr 3fr"
+					grid-gap="64px"
+					xl-grid-gap="32px"
+					md-grid-template-columns="1fr"
+				>
+					<Box
+						min-width="100px"
+						min-height="100px"
+						display="flex"
+						flex-direction="column"
+						align-items="flex-start"
+					>
+						<Text
+							font="1em --fontFamily-googlePoppins"
+							letter-spacing="1px"
+							quarkly-title="Title"
+							margin="0px 0px 10px 0px"
+							opacity="0.6"
+							lg-text-align="center"
+							lg-margin="0px 0px 6px 0px"
+							border-color="rgba(0, 0, 0, 0)"
+							color="#5600f9"
+						>
+							Gaming Theraphy
+						</Text>
+						<Text
+							md-font="--headline3"
+							font="normal normal 600 40px/60px --fontFamily-googlePoppins"
+							margin="0px 0px 28px 0px"
+							color="--dark"
+							lg-text-align="center"
+							lg-margin="0px 0px 18px 0px"
+							sm-font="--headline3"
+						>
+							Enchanting Mental Health Treatment With Video Games
+						</Text>
+						<Text
+							lg-margin="0px 0px 18px 0px"
+							sm-font="--base"
+							font="1em --fontFamily-googlePoppins"
+							margin="0px 0px 20px 0px"
+							color="--darkL2"
+							opacity="0.6"
+							lg-text-align="left"
+						>
+							The purpose of counseling services is to solve the problems experienced by clients. Efforts to alleviate this client problem can be in the form of reducing the intensity of the problem
+						</Text>
+						<Button
+							font="normal 00 16px/1.5 --fontFamily-googlePoppins"
+							color="#ffffff"
+							background="#8A49FF"
+							border-radius="41px"
+							align-self="flex-start"
+							margin="16px 0px 16px 0px"
+						>
+							Learn More
+						</Button>
+					</Box>
+					<Box
+						min-width="100px"
+						min-height="100px"
+						display="flex"
+						flex-direction="column"
+						align-items="flex-start"
+					>
+						<Text
+							font="1em --fontFamily-googlePoppins"
+							letter-spacing="1px"
+							quarkly-title="Title"
+							margin="0px 0px 10px 0px"
+							opacity="0.6"
+							lg-text-align="center"
+							lg-margin="0px 0px 6px 0px"
+							border-color="rgba(0, 0, 0, 0)"
+							color="#5600f9"
+						>
+							Gaming Theraphy
+						</Text>
+						<Text
+							md-font="--headline3"
+							font="normal normal 600 40px/60px --fontFamily-googlePoppins"
+							margin="0px 0px 28px 0px"
+							color="--dark"
+							lg-text-align="center"
+							lg-margin="0px 0px 18px 0px"
+							sm-font="--headline3"
+						>
+							Enchanting Mental Health Treatment With Video Games
+						</Text>
+						<Text
+							lg-margin="0px 0px 18px 0px"
+							sm-font="--base"
+							font="1em --fontFamily-googlePoppins"
+							margin="0px 0px 20px 0px"
+							color="--darkL2"
+							opacity="0.6"
+							lg-text-align="left"
+						>
+							The purpose of counseling services is to solve the problems experienced by clients. Efforts to alleviate this client problem can be in the form of reducing the intensity of the problem
+						</Text>
+						<Button
+							font="normal 00 16px/1.5 --fontFamily-googlePoppins"
+							color="#ffffff"
+							background="#8A49FF"
+							border-radius="41px"
+							align-self="flex-start"
+							margin="16px 0px 16px 0px"
+						>
+							Learn More
+						</Button>
+					</Box>
+					<Image src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/img_4.svg?v=2023-05-02T21:34:02.266Z" display="block" />
+				</Box>
 			</Box>
 		</Section>
 		<Section
@@ -499,7 +828,7 @@ export default (() => {
 					hover-transition="transform 0s ease 0s"
 					hover-transform="translateY(0px)"
 				>
-					<Image src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/mem_5.svg?v=2023-05-02T21:34:02.251Z" display="flex" align-items="stretch" justify-content="center" />
+					<Image src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/5.svg?v=2023-05-02T09:33:30.460Z" display="flex" align-items="stretch" justify-content="center" />
 				</Box>
 			</Box>
 		</Section>
@@ -619,8 +948,8 @@ export default (() => {
 			padding="90px 0px 100px 0px"
 			border-color="rgba(0, 0, 0, 0)"
 			lg-padding="50px 30px 50px 30px"
+			quarkly-title="Testimonials"
 			display="flex"
-			quarkly-title="Banner"
 		>
 			<Override
 				slot="SectionContent"
@@ -628,63 +957,29 @@ export default (() => {
 				margin="0px 48px 0px 48px"
 				md-margin="0px 16px 0px 16px"
 				align-items="center"
-				display="grid"
+				display="flex"
 				align-self="flex-start"
 				flex="0 1 auto"
 				justify-content="center"
 				flex-direction="row"
 			/>
 			<Image
-				src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/Vector%207.svg?v=2023-05-06T17:34:17.820Z"
-				display="block"
-				position="absolute"
-				left="auto"
-				right="-7px"
-				width="515.3653928571429px"
-				bottom="8px"
-				height="911.9776785714286px"
-				top="auto"
-				z-index="-1"
-			/>
-			<Box min-width="100px" min-height="100px" align-self="center" justify-self="center">
-				<Image src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/Logo_3.png?v=2023-05-06T17:25:55.377Z" display="block" />
-			</Box>
-			<Box min-width="100px" min-height="100px">
-				<Text
-					md-font="--headline3"
-					font="normal normal 600 40px/60px --fontFamily-googlePoppins"
-					margin="0px 0px 28px 0px"
-					color="--dark"
-					lg-text-align="center"
-					lg-margin="0px 0px 18px 0px"
-					sm-font="--headline3"
-					text-align="left"
-					align-self="flex-start"
-					display="flex"
-				>
-					Let's Find A Solution To Your Problem
-				</Text>
-			</Box>
-			<Box min-width="100px" min-height="100px" text-align="center">
-				<Button
-					font="normal 00 16px/1.5 --fontFamily-googlePoppins"
-					color="#ffffff"
-					background="#8A49FF"
-					border-radius="41px"
-					align-self="flex-start"
-					margin="16px 0px 16px 0px"
-				>
-					Learn More
-				</Button>
-			</Box>
-			<Image
-				src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/Vector%209.svg?v=2023-05-06T17:28:22.912Z"
-				display="block"
-				position="absolute"
-				left="-1px"
-				bottom="335px"
+				src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/Logo_1.png?v=2023-05-02T21:34:02.277Z"
+				width="120px"
+				z-index="3"
+				flex="0 0 auto"
+				align-self="auto"
+				display="inline-block"
 			/>
 		</Section>
+		<Link
+			transition="opacity 200ms ease"
+			quarkly-title="Link"
+			href="/index"
+			position="relative"
+			border-color="rgba(0, 0, 238, 0)"
+			max-width="fit-content"
+		/>
 		<Section
 			padding="80px 0 80px 0"
 			quarkly-title="Footer"
