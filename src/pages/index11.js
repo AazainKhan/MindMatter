@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Image, Box, Button, Section, Text, Structure, Strong } from "@quarkly/widgets";
+import { Theme, Link, Image, Box, Button, Section, Text, Structure, Span, Strong } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { Override } from "@quarkly/components";
@@ -636,60 +636,9 @@ export default (() => {
 							lg-margin="0px 0px 18px 0px"
 							sm-font="--headline3"
 						>
-							Enchanting Mental Health Treatment With Video Games
-						</Text>
-						<Text
-							lg-margin="0px 0px 18px 0px"
-							sm-font="--base"
-							font="1em --fontFamily-googlePoppins"
-							margin="0px 0px 20px 0px"
-							color="--darkL2"
-							opacity="0.6"
-							lg-text-align="left"
-						>
-							The purpose of counseling services is to solve the problems experienced by clients. Efforts to alleviate this client problem can be in the form of reducing the intensity of the problem
-						</Text>
-						<Button
-							font="normal 00 16px/1.5 --fontFamily-googlePoppins"
-							color="#ffffff"
-							background="#8A49FF"
-							border-radius="41px"
-							align-self="flex-start"
-							margin="16px 0px 16px 0px"
-						>
-							Learn More
-						</Button>
-					</Box>
-					<Box
-						min-width="100px"
-						min-height="100px"
-						display="flex"
-						flex-direction="column"
-						align-items="flex-start"
-					>
-						<Text
-							font="1em --fontFamily-googlePoppins"
-							letter-spacing="1px"
-							quarkly-title="Title"
-							margin="0px 0px 10px 0px"
-							opacity="0.6"
-							lg-text-align="center"
-							lg-margin="0px 0px 6px 0px"
-							border-color="rgba(0, 0, 0, 0)"
-							color="#5600f9"
-						>
-							Gaming Theraphy
-						</Text>
-						<Text
-							md-font="--headline3"
-							font="normal normal 600 40px/60px --fontFamily-googlePoppins"
-							margin="0px 0px 28px 0px"
-							color="--dark"
-							lg-text-align="center"
-							lg-margin="0px 0px 18px 0px"
-							sm-font="--headline3"
-						>
-							Enchanting Mental Health Treatment With Video Games
+							<Span>
+								Enchanting Mental Health Treatment With Video Games
+							</Span>
 						</Text>
 						<Text
 							lg-margin="0px 0px 18px 0px"
@@ -828,7 +777,7 @@ export default (() => {
 					hover-transition="transform 0s ease 0s"
 					hover-transform="translateY(0px)"
 				>
-					<Image src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/5.svg?v=2023-05-02T09:33:30.460Z" display="flex" align-items="stretch" justify-content="center" />
+					<Image src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/mem_5.svg?v=2023-05-02T21:34:02.251Z" display="flex" align-items="stretch" justify-content="center" />
 				</Box>
 			</Box>
 		</Section>
@@ -948,8 +897,8 @@ export default (() => {
 			padding="90px 0px 100px 0px"
 			border-color="rgba(0, 0, 0, 0)"
 			lg-padding="50px 30px 50px 30px"
-			quarkly-title="Testimonials"
 			display="flex"
+			quarkly-title="Banner"
 		>
 			<Override
 				slot="SectionContent"
@@ -957,19 +906,61 @@ export default (() => {
 				margin="0px 48px 0px 48px"
 				md-margin="0px 16px 0px 16px"
 				align-items="center"
-				display="flex"
+				display="grid"
 				align-self="flex-start"
 				flex="0 1 auto"
 				justify-content="center"
 				flex-direction="row"
 			/>
 			<Image
-				src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/Logo_1.png?v=2023-05-02T21:34:02.277Z"
-				width="120px"
-				z-index="3"
-				flex="0 0 auto"
-				align-self="auto"
-				display="inline-block"
+				src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/Vector%207.svg?v=2023-05-06T17:34:17.820Z"
+				display="block"
+				position="absolute"
+				left="auto"
+				right="-7px"
+				width="515.3653928571429px"
+				bottom="8px"
+				height="911.9776785714286px"
+				top="auto"
+				z-index="-1"
+			/>
+			<Box min-width="100px" min-height="100px" align-self="center" justify-self="center">
+				<Image src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/Logo_3.png?v=2023-05-06T17:25:55.377Z" display="block" />
+			</Box>
+			<Box min-width="100px" min-height="100px">
+				<Text
+					md-font="--headline3"
+					font="normal normal 600 40px/60px --fontFamily-googlePoppins"
+					margin="0px 0px 28px 0px"
+					color="--dark"
+					lg-text-align="center"
+					lg-margin="0px 0px 18px 0px"
+					sm-font="--headline3"
+					text-align="left"
+					align-self="flex-start"
+					display="flex"
+				>
+					Let's Find A Solution To Your Problem
+				</Text>
+			</Box>
+			<Box min-width="100px" min-height="100px" text-align="center">
+				<Button
+					font="normal 00 16px/1.5 --fontFamily-googlePoppins"
+					color="#ffffff"
+					background="#8A49FF"
+					border-radius="41px"
+					align-self="flex-start"
+					margin="16px 0px 16px 0px"
+				>
+					Learn More
+				</Button>
+			</Box>
+			<Image
+				src="https://uploads.quarkly.io/64501beea4bc040020a0a4b9/images/Vector%209.svg?v=2023-05-06T17:28:22.912Z"
+				display="block"
+				position="absolute"
+				left="-1px"
+				bottom="335px"
 			/>
 		</Section>
 		<Link

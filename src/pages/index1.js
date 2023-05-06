@@ -68,7 +68,7 @@ export default (() => {
 					Home
 				</Link>
 				<Link
-					href="#"
+					href="/index11"
 					color="#051B29"
 					xl-padding="0px 16px 0px 16px"
 					xl-text-decoration-line="initial"
@@ -98,7 +98,7 @@ export default (() => {
 					Consultation
 				</Link>
 				<Link
-					href="/about"
+					href="/index1"
 					color="#051B29"
 					xl-padding="0px 16px 0px 16px"
 					xl-text-decoration-line="initial"
